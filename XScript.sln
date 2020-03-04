@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XScript", "XScript\XScript.csproj", "{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Broadsword|Any CPU = Broadsword|Any CPU
+		Broadsword|x64 = Broadsword|x64
+		PreAOS|Any CPU = PreAOS|Any CPU
+		PreAOS|x64 = PreAOS|x64
+		RebirthUO|Any CPU = RebirthUO|Any CPU
+		RebirthUO|x64 = RebirthUO|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.Broadsword|Any CPU.ActiveCfg = Broadsword|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.Broadsword|Any CPU.Build.0 = Broadsword|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.Broadsword|x64.ActiveCfg = Broadsword|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.PreAOS|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.PreAOS|Any CPU.Build.0 = Release|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.PreAOS|x64.ActiveCfg = Release|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.RebirthUO|Any CPU.ActiveCfg = RebirthUO|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.RebirthUO|Any CPU.Build.0 = RebirthUO|Any CPU
+		{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}.RebirthUO|x64.ActiveCfg = RebirthUO|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28F16473-C167-4A19-9689-E079445A5DE8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFD9BEAF-1F0E-4236-83D8-E1981DF680C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XScript</RootNamespace>
+    <AssemblyName>XScript</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RebirthUO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RebirthUO - DLL|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RebirthUO - DLL\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RebirthUO</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RebirthUO - Exe|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\RebirthUO - Exe\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RebirthUO</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Official - DLL|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Official - DLL\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Official</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Official - Exe|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Official - Exe\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Official</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RebirthUO|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RebirthUO</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Broadsword|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Official</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ScriptSDK, Version=0.9.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ScriptSDK\ScriptSDK\bin\Debug\ScriptSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Interfaces\ISearchables.cs" />
+    <Compile Include="Distro\Items\Armor\BaseChest.cs" />
+    <Compile Include="Distro\Items\Armor\BaseGloves.cs" />
+    <Compile Include="Distro\Items\Armor\BaseHead.cs" />
+    <Compile Include="Distro\Items\Armor\BaseNeck.cs" />
+    <Compile Include="Distro\Items\Armor\BaseArms.cs" />
+    <Compile Include="Distro\Items\Armor\BaseLegs.cs" />
+    <Compile Include="Distro\Items\BaseBandages.cs" />
+    <Compile Include="Distro\Items\Container\BaseContainer.cs" />
+    <Compile Include="Distro\Items\Container\Corpse.cs" />
+    <Compile Include="Distro\Items\Peerless\Medusa\RareSerpentEgg.cs" />
+    <Compile Include="Distro\Items\Peerless\Medusa\SnakeCharmerFlute.cs" />
+    <Compile Include="Distro\Items\Peerless\Medusa\SerpentNest.cs" />
+    <Compile Include="Distro\Items\Potions\BaseCurePotion.cs" />
+    <Compile Include="Distro\Items\Potions\BasePotion.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\BardSpellbook.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\BookOfBushido.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\BookOfChivalry.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\BookOfNinjitsu.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\MysticismSpellbook.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\NecromancerSpellbook.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\Spellbook.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\SpellweavingSpellbook.cs" />
+    <Compile Include="Distro\Items\Skill Items\Musical Instruments\BambooFlute.cs" />
+    <Compile Include="Distro\Items\Skill Items\Ninjitsu\BaseSmokeBomb.cs" />
+    <Compile Include="Distro\Items\Skill Items\Ninjitsu\EggBomb.cs" />
+    <Compile Include="Distro\Items\Skill Items\Ninjitsu\SmokeBomb.cs" />
+    <Compile Include="Distro\Items\Skill Items\Magical\Runebook.cs" />
+    <Compile Include="Distro\Items\Wands\BaseWand.cs" />
+    <Compile Include="Core\Attributes\AbsorptionAttributes.cs" />
+    <Compile Include="Core\Attributes\ArmorAttributes.cs" />
+    <Compile Include="Core\Attributes\ElementAttributes.cs" />
+    <Compile Include="Core\Attributes\MagicalAttributes.cs" />
+    <Compile Include="Core\Attributes\SkillBonuses.cs" />
+    <Compile Include="Core\Attributes\WeaponAttributes.cs" />
+    <Compile Include="Core\Attributes\WeaponDamageAttributes.cs" />
+    <Compile Include="Core\Enumerations.cs" />
+    <Compile Include="Core\Extensions\Extensions.cs" />
+    <Compile Include="Core\Interfaces\IAttributes.cs" />
+    <Compile Include="Core\Interfaces\IEquipment.cs" />
+    <Compile Include="Distro\Items\Armor\BaseArmor.cs" />
+    <Compile Include="Distro\Items\Clothing\BaseClothing.cs" />
+    <Compile Include="Distro\Items\Food\BaseBeverage.cs" />
+    <Compile Include="Distro\Items\Food\BaseFood.cs" />
+    <Compile Include="Distro\Items\Food\Beverage.cs" />
+    <Compile Include="Distro\Items\Food\ConsumeableFood.cs" />
+    <Compile Include="Distro\Items\Food\CookableFood.cs" />
+    <Compile Include="Distro\Items\Food\CookingMaterial.cs" />
+    <Compile Include="Distro\Items\Food\EnhancedFruits.cs" />
+    <Compile Include="Distro\Items\Food\Fruits.cs" />
+    <Compile Include="Distro\Items\Food\SpecialFood.cs" />
+    <Compile Include="Distro\Items\Food\Spices.cs" />
+    <Compile Include="Distro\Items\Food\Vegetables.cs" />
+    <Compile Include="Distro\Items\Gems\BaseGems.cs" />
+    <Compile Include="Distro\Items\Gems\JewelGems.cs" />
+    <Compile Include="Distro\Items\IArtifactRarity.cs" />
+    <Compile Include="Distro\Items\Jewels\BaseJewel.cs" />
+    <Compile Include="Distro\Items\Jewels\Beads.cs" />
+    <Compile Include="Distro\Items\Jewels\Bracelet.cs" />
+    <Compile Include="Distro\Items\Jewels\Earring.cs" />
+    <Compile Include="Distro\Items\Jewels\Necklace.cs" />
+    <Compile Include="Distro\Items\Jewels\Rings.cs" />
+    <Compile Include="Distro\Items\Shields\BaseShield.cs" />
+    <Compile Include="Distro\Items\Shields\HumanShields.cs" />
+    <Compile Include="Distro\Items\Shields\GargoyleShields.cs" />
+    <Compile Include="Distro\Items\Weapons\BaseWeapon.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseFork.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseSpear.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseSword.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseStaff.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BasePoleArm.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseKnife.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseMace.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseAxe.cs" />
+    <Compile Include="Distro\Items\Weapons\Melee Weapon\BaseMeleeWeapon.cs" />
+    <Compile Include="Distro\Items\Weapons\Ranged Weapon\BaseThrowing.cs" />
+    <Compile Include="Distro\Items\Weapons\Ranged Weapon\BaseBow.cs" />
+    <Compile Include="Distro\Items\Weapons\Ranged Weapon\BaseRangedWeapon.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Crome\Export2CSV\Main.cs" />
+    <Compile Include="Scripts\Crome\UI-Thread\UIThreadTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scripts\Crome\UI-Thread\UIThreadTest.designer.cs">
+      <DependentUpon>UIThreadTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\unisharpUO\LocateGear.cs" />
+    <Compile Include="Scripts\unisharpUO\TargetExtensions.cs" />
+    <Compile Include="UI\WinForms\Themes\AmbianceTheme.cs" />
+    <Compile Include="UI\WinForms\Themes\c#_ghost_theme_by_mavamaarten_[fixed].cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\chrome_theme_-_c#.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\flow_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\fusion_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\future_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\genuine_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\NSTheme.cs" />
+    <Compile Include="UI\WinForms\Themes\prime_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\studio_theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\BaseTheme\ThemeBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\BaseTheme\theme_base_1.5.1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\vibelander_theme_%28converted_to_c#%29.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\Color Combobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\ITalk Theme.cs" />
+    <Compile Include="UI\WinForms\Themes\MonoFlat Theme.cs" />
+    <Compile Include="UI\WinForms\Themes\Notification Box.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Themes\PlayUI Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XScriptVersion.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Scripts\Crome\UI-Thread\UIThreadTest.resx">
+      <DependentUpon>UIThreadTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Distro\Items\Corpse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\XScript.dll.config
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\XScript.dll
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\XScript.pdb
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\ScriptSDK.dll
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\ScriptSDK.pdb
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\XScript.Properties.Resources.resources
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\App.RebirthUO.Scripts.UIThreadTest.UITester.resources
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\XScript.csproj.GenerateResource.Cache
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\XScript.dll
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\XScript.pdb
+C:\Users\jeff\Documents\Repos\XScript\XScript\bin\Debug\ScriptSDK.xml
+C:\Users\jeff\Documents\Repos\XScript\XScript\obj\Debug\XScript.csprojResolveAssemblyReference.cache
