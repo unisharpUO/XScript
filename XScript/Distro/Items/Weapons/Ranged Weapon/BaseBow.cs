@@ -6,7 +6,7 @@ namespace XScript.Items
     [QueryType(typeof (Bow), typeof (CompositeBow), typeof (Crossbow), typeof (HeavyCrossbow),
         typeof (RepeatingCrossbow), typeof (Yumi),
         typeof (ElvenCompositeLongBow), typeof (MagicalShortbow))]
-    public class BaseBow : BaseMeleeWeapon
+    public class BaseBow : BaseRangedWeapon
     {
         public BaseBow(Serial serial)
             : base(serial)

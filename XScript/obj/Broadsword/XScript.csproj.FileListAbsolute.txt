@@ -18,3 +18,4 @@ C:\Users\CFS-Jeff\source\repos\XScript\XScript\bin\ScriptSDK.dll
 C:\Users\CFS-Jeff\source\repos\XScript\XScript\bin\ScriptSDK.pdb
 C:\Users\CFS-Jeff\source\repos\XScript\XScript\bin\ScriptSDK.xml
 C:\Users\CFS-Jeff\source\repos\XScript\XScript\obj\Broadsword\XScript.csproj.CopyComplete
+C:\Users\CFS-Jeff\source\repos\XScript\XScript\obj\Broadsword\XScript.csproj.CoreCompileInputs.cache
